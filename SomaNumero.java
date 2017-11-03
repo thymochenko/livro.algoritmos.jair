@@ -24,20 +24,23 @@ import java.io.*;
 public class SomaNumero {
 
   public static void main(String[] args) {
-    //lê a entrada padrão de dados
-    String a, b;
-    int aint, bint, result;
+    try {
+      //lê a entrada padrão de dados
+      String a, b;
+      int aint, bint, result;
 
-    InputStreamReader read  = new InputStreamReader(System.in);
-    //(1)
-    BufferedReader buffer = new BufferedReader(read);
-    System.out.println("Informe um número A");
-    a = buffer.readLine();
-    System.out.println("Informe o número B");
-    b = buffer.readLine();
-    aint = Integer.parseInt(a);
-    bint = Integer.parseInt(b);
-    result = aint + bint;
-    System.out.println("A soma dos númeoros é : " result);
-  }
+      InputStreamReader read  = new InputStreamReader(System.in);
+      //(1)
+      BufferedReader buffer = new BufferedReader(read);
+      System.out.println("Informe um número A");
+      a = buffer.readLine();
+      System.out.println("Informe o número B");
+      b = buffer.readLine();
+      aint = Integer.parseInt(a);
+      bint = Integer.parseInt(b);
+      result = aint + bint;
+      System.out.println("A soma dos númeoros é : " +  result);
+    }
+    catch(Exception e){}
+    }
 }
